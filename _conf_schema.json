@@ -1,0 +1,12 @@
+{
+  "sessdata": {"type": "string", "description": "B 站 Cookie：SESSDATA", "hint": "浏览器开发者工具 → 应用 → Cookie 中获取，切勿泄露", "default": "", "secret": true},
+  "bili_jct": {"type": "string", "description": "B 站 Cookie：bili_jct（csrf）", "default": "", "secret": true},
+  "buvid3": {"type": "string", "description": "B 站 Cookie：buvid3（可选，建议填写以降低风控概率）", "default": "", "secret": true},
+  "dedeuserid": {"type": "string", "description": "B 站 Cookie：DedeUserID", "default": "", "secret": true},
+  "allowed_qq_ids": {"type": "list", "description": "允许发布的 QQ 号白名单", "hint": "留空 = 禁止一切发布", "default": []},
+  "confirm_ttl_seconds": {"type": "int", "description": "确认有效期（秒）", "default": 120},
+  "max_posts_per_hour": {"type": "int", "description": "每小时最多发布次数", "default": 5},
+  "min_interval_seconds": {"type": "int", "description": "两次发布的最小间隔（秒）", "default": 30},
+  "max_text_length": {"type": "int", "description": "评论/动态最大字数", "default": 200},
+  "read_only_mode": {"type": "bool", "description": "只读模式：开启后拒绝所有发布", "default": false}
+}
